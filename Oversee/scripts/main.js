@@ -1,14 +1,14 @@
 //Testing
 
 let mainBody = document.getElementById('wall');
-let divt = document.getElementById('wall-t');
+let divt = document.getElementById('wall-t'); //Body Text
 let colorD = document.getElementById('toggle-d');
 let colorL = document.getElementById('toggle-l');
-let faceColor = document.getElementById('face-a');
-let quoB = document.getElementById('quote');
+let faceColor = document.getElementById('face-a'); //Face Border
+let quoB = document.getElementById('quote'); //Quote Image
 
 
-colorD.onclick = function change(){
+colorD.onclick = function change(Dark Mode){
 	faceColor.style.borderColor = '#FFFFFF';
 	quoB.style.borderColor = '#FFFFFF';
 	mainBody.style.backgroundColor = '#333';
@@ -18,7 +18,7 @@ colorD.onclick = function change(){
 	colorL.disabled= false ;
 }
 
-colorL.onclick = function change(){
+colorL.onclick = function change(Light Mode){
 	faceColor.style.borderColor = '#4d4d4d';
 	quoB.style.borderColor = '#333';
 	mainBody.style.backgroundColor = '#7c7c7c';
